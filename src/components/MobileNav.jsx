@@ -23,10 +23,10 @@ function MobileNav({ isOpen, onToggle, onClose }) {
       ></button>
 
       <div className={`showMenu ${isOpen ? 'active' : ''}`}>
-        <NavLink to="/home" className="link" onClick={onClose}>
+        <NavLink to="/" end className="link" onClick={onClose}>
           Home
         </NavLink>
-        <NavLink to="/" end className="link" onClick={onClose}>
+        <NavLink to="/find-your-movie" className="link" onClick={onClose}>
           Find Your Movie
         </NavLink>
         <a href="mailto:sam@example.com" className="link" onClick={onClose}>

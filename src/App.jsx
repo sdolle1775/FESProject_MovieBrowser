@@ -8,8 +8,8 @@ function App() {
   return (
     <Routes>
       <Route element={<AppLayout />}>
-        <Route index element={<MovieSearch />} />
-        <Route path="home" element={<Home />} />
+        <Route index element={<Home />} />
+        <Route path="home" element={<Navigate to="/" replace />} />
         <Route path="find-your-movie" element={<MovieSearch />} />
         <Route path="movie/:imdbID" element={<MovieDetails />} />
         <Route path="*" element={<Navigate to="/" replace />} />

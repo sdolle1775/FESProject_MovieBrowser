@@ -13,10 +13,10 @@ function Navbar() {
       </div>
 
       <div className="links flex align-center justify-between">
-        <NavLink to="/home" className="link">
+        <NavLink to="/" end className="link">
           Home
         </NavLink>
-        <NavLink to="/" end className="link">
+        <NavLink to="/find-your-movie" className="link">
           Find Your Movie
         </NavLink>
         <a href="mailto:sam@example.com" className="btn-contact">
