@@ -20,10 +20,10 @@ A React movie browsing app built with Vite and the OMDb API.
 
 ## Routes
 
-- `/` - Home page
-- `/find-your-movie` - Movie search results
-- `/find-your-movie?search=batman&page=2` - Search with pagination
-- `/movie/:imdbID` - Movie details page
+- `#/` - Home page
+- `#/find-your-movie` - Movie search results
+- `#/find-your-movie?search=batman&page=2` - Search with pagination
+- `#/movie/:imdbID` - Movie details page
 
 ## Getting Started
 
@@ -53,12 +53,16 @@ npm run lint
 
 ## Deployment
 
-This project is ready to deploy on Vercel.
+This project is configured for GitHub Pages.
 
-Recommended settings:
+GitHub Pages URL:
 
-- Framework Preset: Vite
-- Build Command: `npm run build`
-- Output Directory: `dist`
+```text
+https://sdolle1775.github.io/FESProject_MovieBrowser/
+```
+
+The project uses `HashRouter` so dynamic routes work on GitHub Pages.
+
+The GitHub Actions workflow in `.github/workflows/deploy.yml` builds the app and deploys the `dist` folder whenever changes are pushed to `main`.
 
 The OMDb API key is currently included in the frontend source for this course project.
